@@ -1,0 +1,13 @@
+extends layout
+
+
+block content
+  head
+    style
+      include index.css
+  div(class="container")
+    each val in messageArray
+      h1= val.text
+      p= val.user
+      p= val.added
+  a(href="/news") Add message

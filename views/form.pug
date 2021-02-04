@@ -1,0 +1,9 @@
+extends layout
+block content
+    h1 title
+    form(method="POST" action="/new")
+        label name
+            input(type="text" name="messageText")
+        label message
+            input(type="text" name="messageUser")
+        button Submit
